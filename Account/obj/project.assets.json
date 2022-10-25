@@ -2395,9 +2395,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Account\\Account.csproj",
-      "projectName": "Account",
-      "projectPath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Account\\Account.csproj",
+      "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Account\\AccountService.csproj",
+      "projectName": "AccountService",
+      "projectPath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Account\\AccountService.csproj",
       "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Account\\obj\\",
       "projectStyle": "PackageReference",

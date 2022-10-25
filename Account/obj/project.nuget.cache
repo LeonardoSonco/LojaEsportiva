@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XHUmZG4ECQ6vW6bNbHh+sl3Ed5MRRLtg9yLLafiqQwrCz/eZP83bZvTJfKGXqcpUDz3bK658DpksZS9h5SurAA==",
+  "dgSpecHash": "JHIIdnGy6aB0nKobBO4Fo/flYvZU/0FOc51H6FHRKTwMzY1TRIkVimh6O2Z63N7okmL71cyIku6LzfMgfWIixw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Account\\Account.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Account\\AccountService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonardo\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

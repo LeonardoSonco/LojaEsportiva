@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{2141E96B-FD2E-42C1-9407-8E77C7729FAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{2141E96B-FD2E-42C1-9407-8E77C7729FAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountService", "AccountService", "{343742B1-6542-4A9F-A49E-C517347E369B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InventoryService", "InventoryService", "{90CBD5F5-9133-4BD9-A368-54C9B5E2A7DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountService", "Account\AccountService.csproj", "{62923EAE-7DDE-406C-98B5-D20632FB3A28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryService", "Inventory\InventoryService.csproj", "{C0B6B82C-C632-48B7-9E12-D37C275CD3D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +23,21 @@ Global
 		{2141E96B-FD2E-42C1-9407-8E77C7729FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2141E96B-FD2E-42C1-9407-8E77C7729FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2141E96B-FD2E-42C1-9407-8E77C7729FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62923EAE-7DDE-406C-98B5-D20632FB3A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62923EAE-7DDE-406C-98B5-D20632FB3A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62923EAE-7DDE-406C-98B5-D20632FB3A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62923EAE-7DDE-406C-98B5-D20632FB3A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0B6B82C-C632-48B7-9E12-D37C275CD3D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0B6B82C-C632-48B7-9E12-D37C275CD3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0B6B82C-C632-48B7-9E12-D37C275CD3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0B6B82C-C632-48B7-9E12-D37C275CD3D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{62923EAE-7DDE-406C-98B5-D20632FB3A28} = {343742B1-6542-4A9F-A49E-C517347E369B}
+		{C0B6B82C-C632-48B7-9E12-D37C275CD3D4} = {90CBD5F5-9133-4BD9-A368-54C9B5E2A7DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18FD758D-A02E-4CAF-8092-C4481499AE34}

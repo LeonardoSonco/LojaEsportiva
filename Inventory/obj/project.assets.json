@@ -2191,9 +2191,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Inventory\\Inventory.csproj",
-      "projectName": "Inventory",
-      "projectPath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Inventory\\Inventory.csproj",
+      "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Inventory\\InventoryService.csproj",
+      "projectName": "InventoryService",
+      "projectPath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Inventory\\InventoryService.csproj",
       "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Inventory\\obj\\",
       "projectStyle": "PackageReference",
