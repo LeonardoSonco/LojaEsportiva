@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\ApiGateway\\ApiGateway.csproj": {}
+    "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\ApiGateway\\ApiGateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\ApiGateway\\ApiGateway.csproj": {
+    "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\ApiGateway\\ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\ApiGateway\\ApiGateway.csproj",
+        "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\ApiGateway\\ApiGateway.csproj",
         "projectName": "ApiGateway",
-        "projectPath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\ApiGateway\\ApiGateway.csproj",
+        "projectPath": "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\ApiGateway\\ApiGateway.csproj",
         "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\ApiGateway\\obj\\",
+        "outputPath": "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\ApiGateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leonardo\\AppData\\Roaming\\NuGet\\NuGet.Config",

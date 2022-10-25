@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Account\\AccountService.csproj": {}
+    "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\Account\\AccountService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Account\\AccountService.csproj": {
+    "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\Account\\AccountService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Account\\AccountService.csproj",
+        "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\Account\\AccountService.csproj",
         "projectName": "AccountService",
-        "projectPath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Account\\AccountService.csproj",
+        "projectPath": "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\Account\\AccountService.csproj",
         "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Account\\obj\\",
+        "outputPath": "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\Account\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leonardo\\AppData\\Roaming\\NuGet\\NuGet.Config",

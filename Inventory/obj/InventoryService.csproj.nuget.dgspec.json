@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Inventory\\InventoryService.csproj": {}
+    "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\Inventory\\InventoryService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Inventory\\InventoryService.csproj": {
+    "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\Inventory\\InventoryService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Inventory\\InventoryService.csproj",
+        "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\Inventory\\InventoryService.csproj",
         "projectName": "InventoryService",
-        "projectPath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Inventory\\InventoryService.csproj",
+        "projectPath": "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\Inventory\\InventoryService.csproj",
         "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Inventory\\obj\\",
+        "outputPath": "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\Inventory\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leonardo\\AppData\\Roaming\\NuGet\\NuGet.Config",

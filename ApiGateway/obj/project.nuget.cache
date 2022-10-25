@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "54yuavj2KPLwLBLsRf0gtLxHl3QGoaWMBtZ3kne0vaJ1Vh32revwnd/+Xt5BZOtYLGvaCdxB9H+BnV2hfBTbAQ==",
+  "dgSpecHash": "1jFJhaqaLUM3D0uHVfKtTN+APOqvp9i3w1BH+E65ds8rEoWIjXIT+jPi1Hvqi7tyRK3rZL9ElJPyU499D2TrMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\ApiGateway\\ApiGateway.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\ApiGateway\\ApiGateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonardo\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.1\\microsoft.aspnetcore.jsonpatch.6.0.1.nupkg.sha512",

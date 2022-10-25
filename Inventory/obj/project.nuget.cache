@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zxsn9PvQ/CT8n8rIZncgFsLsMIA978dcrtkJ/nHqsMeI7p+zRFD8ntjQMwF+Y5ialnLciJyxNvOT/HceBojmyg==",
+  "dgSpecHash": "ag8zOr5fRnvmbEiFBp+18NCfA5y8v/AbqEokhVZxpP4cNd65URfIMcHBYS6RufumGMoHB6K5ijBO4uc4lShS2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\Desktop\\TesteAPI\\LojaEsportiva\\Inventory\\InventoryService.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\Desktop\\Faculdade\\Faculade\\6 SEMESTRE\\Qualquer coisa como serviço\\LojaEsportiva\\Inventory\\InventoryService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leonardo\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
