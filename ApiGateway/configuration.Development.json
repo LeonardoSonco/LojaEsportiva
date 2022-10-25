@@ -1,0 +1,42 @@
+/*
+  Em ReRoutes definimos como funcionará o sistema de redirecionamento da API Gateway
+
+  DownstreamPathTemplate: Define a URL que será utilizada na criação da solicitação para o microsserviço;
+  DownstreamScheme: Define o scheme utilizado na solicitação para o microsserviço;
+  DownstreamHostAndPorts: Define o Host e a porta (Port) utilizada na solicitação para o microsserviço;
+  UpstreamPathTemplate: Define a URL que o Ocelot irá utilizar para indicar que deve ser chamado o microsserviço definido nos atributos Downstream
+  UpstreamHttpMethod: Define os métodos HTTP aceitos;
+
+*/
+
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44339
+        }
+      ],
+      "UpstreamPathTemplate": "/api1/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44377
+        }
+      ],
+      "UpstreamPathTemplate": "/api2/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    }
+  ],
+
+  "GlobalConfiguration": {
+  }
+}
