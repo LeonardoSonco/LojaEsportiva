@@ -1,4 +1,8 @@
-﻿namespace InventoryService
+﻿using InventoryService.Data;
+
+using Microsoft.EntityFrameworkCore;
+
+namespace InventoryService
 {
     public class Startup
     {
@@ -12,12 +16,8 @@
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddDbContext<AppDbContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("FilmeConnection"))); // Conecta no banco
+            services.AddDbContext<AppDbContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("InventoryConnection"))); // Conecta no banco
             services.AddControllers();
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "FilmesAPI", Version = "v1" });
-            //});
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
         }

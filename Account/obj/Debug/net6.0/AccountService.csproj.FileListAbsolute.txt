@@ -60,3 +60,5 @@ C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serv
 C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Account\obj\Debug\net6.0\AccountService.pdb
 C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Account\obj\Debug\net6.0\AccountService.genruntimeconfig.cache
 C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Account\obj\Debug\net6.0\ref\AccountService.dll
+C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Account\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Account\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
