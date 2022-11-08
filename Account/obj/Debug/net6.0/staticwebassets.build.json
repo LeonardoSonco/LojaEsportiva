@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "9EFwGxrIuFdTMVnOzx9J9VJB56g2VXSVrESkw7ztbsU=",
-  "Source": "AccountService",
-  "BasePath": "_content/AccountService",
+  "Hash": "6OFpJyZ31pn1uY7K/s8bKm0ePN16eK7wrFfWenWawCA=",
+  "Source": "RegisterService",
+  "BasePath": "_content/RegisterService",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

@@ -22,14 +22,66 @@ namespace InventoryService.Controllers
         }
        
         [HttpPost]
-        public IActionResult AddProduct([FromBody] CreateProductDto productDto)
+        public IActionResult AddProduct([FromBody] CreateProductDto productDto) // IActionResult, tem funções especificas de retorno
         {
-            Stock stock = _mapper.Map<Stock>(productDto);
-            _context.Inventories.Add(stock);
-            _context.SaveChanges();
-            return Ok(stock);
-            
-            //return CreatedAtAction(nameof(SearchInventoryId), new { Id = inventory.Id }, inventory);
+            Stock stock = _mapper.Map<Stock>(productDto); // Converte um productDto para um stock
+            _context.Inventories.Add(stock); // adiciona o produto no banco
+            _context.SaveChanges(); // salva operação no banco
+            return CreatedAtAction(nameof(SearchInventoryId), new { Id = stock.Id }, stock); //Indica a ação de criação do filme
         }
+
+        [HttpGet]
+        public IActionResult SearchInventory()
+        {
+
+            return Ok(_context.Inventories); // Retorna todos os produtos (todo o conjunto de dados)
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult SearchInventoryId(int id)
+        {
+            Stock stock = _context.Inventories.FirstOrDefault(stock => stock.Id == id); // procura por o id passado no banco se não achar retorna null
+
+
+            if (stock != null)
+            {
+                ReadProductDto productDto = _mapper.Map<ReadProductDto>(stock); // converte um produto para um productDto e passa os valores
+                return Ok(productDto); // mostra o produto buscado
+            }
+            return NotFound();
+        }
+
+
+        [HttpPut("{id}")]
+        public IActionResult AtualizaFilme(int id, [FromBody] UpdateProductDto productDto) // recebe a partir do corpo da requisição recebe as novas informações
+        {
+            Stock stock = _context.Inventories.FirstOrDefault(stock => stock.Id == id); // procura por o id passado no banco se não achar retorna null
+
+            if (stock == null)
+            {
+                return NotFound(); // Informa que o filme não foi encontrado
+            }
+
+            _mapper.Map(productDto, stock); // converte um productDto para um produto
+
+
+            _context.SaveChanges(); // salva a atualização no banco, e passa os novos valores
+            return NoContent();
+        }
+        [HttpDelete("{id}")]
+        public IActionResult DeletaFilme(int id)
+        {
+
+            Stock stock = _context.Inventories.FirstOrDefault(stock => stock.Id == id);
+
+            if (stock == null)
+            {
+                return NotFound(); // Informa que o filme não foi encontrado
+            }
+            _context.Remove(stock); // remove do banco o produto pelo o id passado
+            _context.SaveChanges();// salva a atualização no banco
+            return NoContent();
+        }
+
     }
 }

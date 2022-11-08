@@ -1,4 +1,5 @@
-﻿using InventoryService.Data;
+﻿
+using InventoryService.Data;
 
 using Microsoft.EntityFrameworkCore;
 
@@ -18,8 +19,8 @@ namespace InventoryService
         {
             services.AddDbContext<AppDbContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("InventoryConnection"))); // Conecta no banco
             services.AddControllers();
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies()); // injeta o AutoMapper
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -32,13 +33,17 @@ namespace InventoryService
             }
 
             app.UseHttpsRedirection();
+            
 
             app.UseRouting();
 
+
             app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints =>
             {
+                
                 Console.WriteLine("Funcionou");
                 endpoints.MapControllers();
             });

@@ -12,6 +12,8 @@ namespace ApiGateway
 {
     public class Startup
     {
+
+        
         private IConfiguration configuration;
         public Startup(IConfiguration configuration)
         {
