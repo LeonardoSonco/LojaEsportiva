@@ -1,6 +1,8 @@
 using EmailService.Core.HostedServices;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.OpenApi.Models;
+
 using Registerservice.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,17 +20,30 @@ builder.Services.AddDbContext<AppDbContext>(opts => opts.UseSqlServer(connection
 builder.Services.AddControllers();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Two", Version = "v1" });
+});
+
 builder.Services.AddSingleton<EmailHostedService>();
 builder.Services.AddHostedService(provider => provider.GetService<EmailHostedService>());
+
+
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseDeveloperExceptionPage();
+    
 }
+
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Two V1");
+});
 
 app.UseHttpsRedirection();
 

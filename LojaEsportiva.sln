@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegisterService", "Account\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryService", "Inventory\InventoryService.csproj", "{C0B6B82C-C632-48B7-9E12-D37C275CD3D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService.Core", "EmailService.Core\EmailService.Core.csproj", "{C4BDCC0A-81F1-421C-A0CF-7FAD1DA80056}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailService.Core", "EmailService.Core\EmailService.Core.csproj", "{C4BDCC0A-81F1-421C-A0CF-7FAD1DA80056}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

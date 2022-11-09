@@ -1,0 +1,66 @@
+/*
+  Em ReRoutes definimos como funcionará o sistema de redirecionamento da API Gateway
+
+  DownstreamPathTemplate: Define a URL que será utilizada na criação da solicitação para o microsserviço;
+  DownstreamScheme: Define o scheme utilizado na solicitação para o microsserviço;
+  DownstreamHostAndPorts: Define o Host e a porta (Port) utilizada na solicitação para o microsserviço;
+  UpstreamPathTemplate: Define a URL que o Ocelot irá utilizar para indicar que deve ser chamado o microsserviço definido nos atributos Downstream
+  UpstreamHttpMethod: Define os métodos HTTP aceitos;
+
+*/
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44392
+        }
+      ],
+      "UpstreamPathTemplate": "/api1/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "SwaggerKey": "ApiOne"
+    },
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44366
+        }
+      ],
+      "UpstreamPathTemplate": "/api2/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "SwaggerKey": "ApiTwo"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "ApiOne",
+      "Config": [
+        {
+          "Name": "Api One",
+          "Version": "v1",
+          "Url": "https://localhost:44392/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "ApiTwo",
+      "Config": [
+        {
+          "Name": "Api Two",
+          "Version": "v1",
+          "Url": "https://localhost:44366/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ],
+
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost"
+  }
+}
