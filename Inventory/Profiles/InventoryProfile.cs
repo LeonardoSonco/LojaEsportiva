@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-
 using InventoryService.Data.Inventory;
 using InventoryService.Models; 
 
@@ -14,6 +13,5 @@ namespace InventoryService.Profiles
             CreateMap<UpdateProductDto, Stock>();
 
         }
-
     }
 }

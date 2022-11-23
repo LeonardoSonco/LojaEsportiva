@@ -78,3 +78,4 @@ C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serv
 C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Account\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Account\bin\Debug\net6.0\EmailService.Core.dll
 C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Account\bin\Debug\net6.0\EmailService.Core.pdb
+C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Account\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

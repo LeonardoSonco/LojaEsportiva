@@ -4,7 +4,7 @@
 
 namespace InventoryService.Migrations
 {
-    public partial class inventoryDb : Migration
+    public partial class inventoryDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

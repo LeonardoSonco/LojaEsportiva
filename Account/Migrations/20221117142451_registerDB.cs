@@ -4,7 +4,7 @@
 
 namespace RegisterService.Migrations
 {
-    public partial class register : Migration
+    public partial class registerDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

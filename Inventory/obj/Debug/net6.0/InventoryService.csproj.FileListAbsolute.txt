@@ -62,3 +62,4 @@ C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serv
 C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Inventory\obj\Debug\net6.0\InventoryService.pdb
 C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Inventory\obj\Debug\net6.0\InventoryService.genruntimeconfig.cache
 C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Inventory\obj\Debug\net6.0\ref\InventoryService.dll
+C:\Users\Leonardo\Desktop\Faculdade\Faculade\6 SEMESTRE\Qualquer coisa como serviço\LojaEsportiva\Inventory\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -1,17 +1,25 @@
 ﻿using Registerservice.Data;
 using Registerservice.Data.Dtos;
 using Registerservice.Models;
-
+using EmailService.Core;
 using AutoMapper;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Win32;
+using EmailService.Core.Common.Email.Model;
+using Mailjet.Client.Resources;
+using EmailService.Core.Common.Email.EmailSender;
+using EmailService.Core.HostedServices;
+using RegisterService;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Registerservice.Controllers
 {
+   
 
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class RegisterController : ControllerBase
     {
         private AppDbContext _context;
@@ -22,10 +30,11 @@ namespace Registerservice.Controllers
             _context = context;
             _mapper = mapper;
         }
-
+        
         [HttpPost]
         public IActionResult AddProduct([FromBody] CreateRegisterDto registerDto)
         {
+  
             Register register = _mapper.Map<Register>(registerDto);
             _context.Registers.Add(register);
             _context.SaveChanges();
@@ -72,7 +81,8 @@ namespace Registerservice.Controllers
             filme.Diretor = filmeDto.Diretor;
             _context.SaveChanges();
             return NoContent();
-        }
+        }*/
+
         [HttpDelete("{id}")]
         public IActionResult DeletaFilme(int id)
         {
@@ -86,6 +96,6 @@ namespace Registerservice.Controllers
             _context.Remove(register);
             _context.SaveChanges();
             return NoContent();
-        }*/
+        }
     }
 }

@@ -4,12 +4,14 @@ using InventoryService.Data;
 using InventoryService.Data.Inventory;
 using InventoryService.Models;
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryService.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class InventoryController : ControllerBase
     {
         private AppDbContext _context;
@@ -30,18 +32,19 @@ namespace InventoryService.Controllers
             return CreatedAtAction(nameof(SearchInventoryId), new { Id = stock.Id }, stock); //Indica a ação de criação do filme
         }
 
+        
         [HttpGet]
+        //[Authorize(Roles = "manager")]
         public IActionResult SearchInventory()
         {
 
             return Ok(_context.Inventories); // Retorna todos os produtos (todo o conjunto de dados)
         }
-
+        
         [HttpGet("{id}")]
         public IActionResult SearchInventoryId(int id)
         {
             Stock stock = _context.Inventories.FirstOrDefault(stock => stock.Id == id); // procura por o id passado no banco se não achar retorna null
-
 
             if (stock != null)
             {
@@ -63,8 +66,6 @@ namespace InventoryService.Controllers
             }
 
             _mapper.Map(productDto, stock); // converte um productDto para um produto
-
-
             _context.SaveChanges(); // salva a atualização no banco, e passa os novos valores
             return NoContent();
         }

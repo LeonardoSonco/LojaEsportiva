@@ -11,8 +11,8 @@ using Registerservice.Data;
 namespace RegisterService.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221101192502_register")]
-    partial class register
+    [Migration("20221117142451_registerDB")]
+    partial class registerDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

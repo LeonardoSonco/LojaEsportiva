@@ -28,7 +28,7 @@ namespace EmailService.Core.HostedServices
         }
        
         //Method send emaail - wakeup BufferBlock
-        public async Task SendEmailAsync(EmailModel emailModel) => await _mailQueue.SendAsync(emailModel);
+        public Task SendEmailAsync(EmailModel emailModel) => _mailQueue.SendAsync(emailModel);
         
 
         public void Dispose()

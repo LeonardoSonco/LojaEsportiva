@@ -34,7 +34,7 @@ namespace EmailService.Core.Common.Email.EmailProvider
                 jArray.Add(new JObject
                 {
                     new JProperty("FromEmail","lojaesportivaunipampa@gmail.com"),
-                    new JProperty("FromName","Leonardo Sonco"),
+                    new JProperty("FromName","MK-SPORTS"),
                     new JProperty("Recipients",new JArray
                     {
                         new JObject {
