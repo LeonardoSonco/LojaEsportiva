@@ -34,7 +34,6 @@ namespace Registerservice.Controllers
         [HttpPost]
         public IActionResult AddProduct([FromBody] CreateRegisterDto registerDto)
         {
-  
             Register register = _mapper.Map<Register>(registerDto);
             _context.Registers.Add(register);
             _context.SaveChanges();
@@ -44,7 +43,6 @@ namespace Registerservice.Controllers
         [HttpGet]
         public IActionResult SearchAccount()
         {
-
             return Ok(_context.Registers);
         }
 
@@ -53,7 +51,6 @@ namespace Registerservice.Controllers
         {
             Register register = _context.Registers.FirstOrDefault(register => register.Id == id);
 
-
             if (register != null)
             {
                 ReadRegisterDto registerDto = _mapper.Map<ReadRegisterDto>(register);
@@ -61,6 +58,7 @@ namespace Registerservice.Controllers
             }
             return NotFound();
         }
+       
         /*
         [HttpPut("{id}")]
         public IActionResult AtualizaFilme(int id, [FromBody] UpdateRegisterDto registerDto) // recebe a partir do corpo da requisição recebe as novas informações
@@ -86,12 +84,10 @@ namespace Registerservice.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeletaFilme(int id)
         {
-
             Register register = _context.Registers.FirstOrDefault(register => register.Id == id);
-
             if (register == null)
             {
-                return NotFound(); // Informa que o filme não foi encontrado
+                return NotFound(); 
             }
             _context.Remove(register);
             _context.SaveChanges();

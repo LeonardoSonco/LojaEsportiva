@@ -11,7 +11,6 @@ namespace InventoryService.Profiles
             CreateMap<CreateProductDto, Stock>(); // faz a conversão da classe productDto, para a classe stock ( que contem o id)
             CreateMap<Stock, ReadProductDto>(); 
             CreateMap<UpdateProductDto, Stock>();
-
         }
     }
 }

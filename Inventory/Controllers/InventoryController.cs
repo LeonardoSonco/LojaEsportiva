@@ -24,6 +24,7 @@ namespace InventoryService.Controllers
         }
        
         [HttpPost]
+        [Authorize(Roles = "manager")]
         public IActionResult AddProduct([FromBody] CreateProductDto productDto) // IActionResult, tem funções especificas de retorno
         {
             Stock stock = _mapper.Map<Stock>(productDto); // Converte um productDto para um stock
@@ -32,9 +33,8 @@ namespace InventoryService.Controllers
             return CreatedAtAction(nameof(SearchInventoryId), new { Id = stock.Id }, stock); //Indica a ação de criação do filme
         }
 
-        
         [HttpGet]
-        //[Authorize(Roles = "manager")]
+        //[Authorize(Roles = "manager")] // faz com que apenas o manager utilize tal funcionalidade
         public IActionResult SearchInventory()
         {
 

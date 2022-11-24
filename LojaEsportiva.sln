@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryService", "Invento
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailService.Core", "EmailService.Core\EmailService.Core.csproj", "{C4BDCC0A-81F1-421C-A0CF-7FAD1DA80056}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationService", "WebApplication1\AuthenticationService.csproj", "{205733A8-D859-4916-ACD8-77A561422598}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{C4BDCC0A-81F1-421C-A0CF-7FAD1DA80056}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4BDCC0A-81F1-421C-A0CF-7FAD1DA80056}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4BDCC0A-81F1-421C-A0CF-7FAD1DA80056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{205733A8-D859-4916-ACD8-77A561422598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205733A8-D859-4916-ACD8-77A561422598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205733A8-D859-4916-ACD8-77A561422598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205733A8-D859-4916-ACD8-77A561422598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

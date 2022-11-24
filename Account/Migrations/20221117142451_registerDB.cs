@@ -22,7 +22,6 @@ namespace RegisterService.Migrations
                     table.PrimaryKey("PK_Registers", x => x.Id);
                 });
         }
-
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

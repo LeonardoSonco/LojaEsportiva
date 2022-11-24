@@ -12,12 +12,9 @@ using Microsoft.OpenApi.Models;
 using Registerservice.Data;
 
 using RegisterService;
-using RegisterService.Models;
-using RegisterService.Repositories;
-using RegisterService.Service;
+
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 var key = Encoding.ASCII.GetBytes(Settings.Secret); // Transformanando a chave em array de bytes
 
@@ -37,7 +34,6 @@ builder.Services.AddAuthentication(x =>
         ValidateAudience = false
     };
 });
-
 // Add services to the container.
 //builder.Services.AddRazorPages();
 builder.Services.AddEndpointsApiExplorer();
@@ -49,8 +45,36 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Two", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Two", Version = "v1" }); 
     c.ResolveConflictingActions(x => x.First());
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description =
+            "JWT Authorization Header - utilizado com Bearer Authentication.\r\n\r\n" +
+            "Digite 'Bearer' [espaço] e então seu token no campo abaixo.\r\n\r\n" +
+            "Exemplo (informar sem as aspas): 'Bearer 12345abcdef'",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+
 });
 
 builder.Services.AddAuthorization(options =>
@@ -60,11 +84,10 @@ builder.Services.AddAuthorization(options =>
 });
 
 builder.Services.AddSingleton<EmailHostedService>();
+
 builder.Services.AddHostedService(provider => provider.GetService<EmailHostedService>());
 
-
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -73,6 +96,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseSwagger();
+
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Two V1");
@@ -89,22 +113,6 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
-app.MapPost("login", (User model) =>
-{
-    var user = UserRepository.Get(model.Username, model.Password);
-    if (user == null)
-        return Results.NotFound(new { message = "Usuario inválido" });
-
-    var token = TokenService.GenerateToken(user);
-    user.Password = "";
-    return Results.Ok(new
-    {
-        user = user,
-        token = token
-    });
-});
-
-
 app.MapPost("/teste-email", async (EmailHostedService hostedService) =>
 {
     await hostedService.SendEmailAsync(new EmailService.Core.Common.Email.Model.EmailModel
@@ -115,7 +123,6 @@ app.MapPost("/teste-email", async (EmailHostedService hostedService) =>
         Attachment = null
     });
 }).WithName("TestEmail");
-
 
 app.UseEndpoints(endpoints =>
 {

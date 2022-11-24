@@ -10,9 +10,6 @@ namespace InventoryService.Data
         {
 
         }
-
        public DbSet<Stock> Inventories { get; set; }
-    }
-
-    
+    } 
 }

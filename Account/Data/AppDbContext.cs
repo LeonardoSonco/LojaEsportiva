@@ -10,7 +10,6 @@ namespace Registerservice.Data
         {
 
         }
-
         public DbSet<Register> Registers { get; set; }
     }
 }

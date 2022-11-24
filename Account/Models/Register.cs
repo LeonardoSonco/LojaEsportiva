@@ -4,7 +4,6 @@ namespace Registerservice.Models
 {
     public class Register
     {
-
         [Key]
         [Required]
         public int Id { get; set; }

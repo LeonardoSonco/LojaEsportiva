@@ -4,8 +4,6 @@
 using Registerservice.Data.Dtos;
 using Registerservice.Models;
 
-
-
 namespace Registerservice.Profiles
 {
     public class RegisterProfile : Profile

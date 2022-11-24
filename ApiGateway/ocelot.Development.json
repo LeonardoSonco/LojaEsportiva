@@ -16,7 +16,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44392
+          "Port": 7281
         }
       ],
       "UpstreamPathTemplate": "/api1/{everything}",
@@ -29,13 +29,27 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44366
+          "Port": 7201
         }
       ],
       "UpstreamPathTemplate": "/api2/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
       "SwaggerKey": "ApiTwo"
+    },
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7183
+        }
+      ],
+      "UpstreamPathTemplate": "/Auth/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "SwaggerKey": "Autenticacao"
     }
+
   ],
   "SwaggerEndPoints": [
     {
@@ -44,7 +58,7 @@
         {
           "Name": "Api One",
           "Version": "v1",
-          "Url": "https://localhost:44392/swagger/v1/swagger.json"
+          "Url": "https://localhost:7281/swagger/v1/swagger.json"
         }
       ]
     },
@@ -54,10 +68,21 @@
         {
           "Name": "Api Two",
           "Version": "v1",
-          "Url": "https://localhost:44366/swagger/v1/swagger.json"
+          "Url": "https://localhost:7201/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Autenticacao",
+      "Config": [
+        {
+          "Name": "Auth",
+          "Version": "v1",
+          "Url": "https://localhost:7183/swagger/v1/swagger.json"
         }
       ]
     }
+
   ],
 
   "GlobalConfiguration": {
